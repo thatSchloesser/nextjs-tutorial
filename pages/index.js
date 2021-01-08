@@ -26,13 +26,13 @@ export async function getStaticProps() {
 }
 
 //data dependencies for SERVER SIDE rendering
-export async function getServerSideProps(context) {
-  return {
-    props: {
-      // props for your component
-    },
-  };
-}
+// export async function getServerSideProps(context) {
+//   return {
+//     props: {
+//       // props for your component
+//     },
+//   };
+// }
 
 export default function Home({ allPostsData }) {
   return (
