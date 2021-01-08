@@ -5,12 +5,21 @@ import Link from 'next/Link';
 
 import { getSortedPostsData } from '../lib/posts';
 
-//data dependencies
+//data dependencies for PRE Rendering
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
+    },
+  };
+}
+
+//data dependencies for SERVER SIDE rendering
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      // props for your component
     },
   };
 }
