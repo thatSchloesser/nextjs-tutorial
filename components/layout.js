@@ -1,5 +1,9 @@
+//SEO
 import Head from 'next/head';
+//layout css modules
 import styles from './layout.module.css';
+
+//util styles (layout in this case)
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
